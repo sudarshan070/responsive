@@ -47,9 +47,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
-.hero_content, .hero_img {
+.hero_content,
+.hero_img {
     width: 48%;
 }
 
@@ -68,12 +70,12 @@ body {
 }
 
 .hero_content button {
-  background: transparent;
-  padding: 6px 18px;
-  font-size: 1.2rem;
-  text-transform: capitalize;
-  border-radius: 4px;
-  margin-top: 12px;
+    background: transparent;
+    padding: 6px 18px;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    border-radius: 4px;
+    margin-top: 12px;
 }
 
 .hero_img img {
@@ -90,7 +92,8 @@ body {
         flex-direction: column-reverse;
     }
 
-    .hero_content, .hero_img {
+    .hero_content,
+    .hero_img {
         width: 100%;
     }
 
@@ -108,8 +111,8 @@ body {
 /* Product Card section */
 
 .product {
-   display: flex;
-   justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .card {
@@ -167,6 +170,19 @@ body {
     text-align: center;
 }
 
-@media screen and (max-width: '768px') {
-    
+@media screen and (max-width: 768px) {}
+
+.overview_box {
+    position: absolute;
+    background: red;
+    bottom: 0;
+    left: 0;
+    width: 75%;
+    padding: 24px;
+    display: flex;
+    color: white;
+}
+
+.overview_box p {
+    margin: 0 12px;
 }
